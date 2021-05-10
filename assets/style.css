@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+.font-play {
+    font-family: "Play";
+}
+
+body {
+    background-color: #121212;
+    color: #fff;  
+}
+p {
+    margin-bottom: 0;
+}
+.nitk-logo {
+    width: 5.5rem;
+    height:5.5rem;
+}
+.take-middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.footer-font-size {
+    font-size: 0.70rem;;
+}
+
+/* Animated text */
+.ongoing-animated {
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #000,red, #000);
+        -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: shine 3s linear infinite;
+    position: relative;
+  }
+  
+  @keyframes shine {
+    0% {
+      background-position-x: -500%;
+    }
+    100% {
+      background-position-x: 500%;
+    }
+  }
+  
+  
