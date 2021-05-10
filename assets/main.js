@@ -69,13 +69,13 @@ const checkDayAndTime = (currentDay) => {
             onGoingClass("PSC", "mon-1")
         } else if(timeCheck(10,30,11,45)) {
             onGoingClass("PH111", "mon-2")
-        } else if(timeCheck(14,00,24,30)) {
+        } else if(timeCheck(14,00,14,30)) {
             onGoingClass("MA111", "mon-3")
         }
     } else if (dayCheck("Tuesday", currentDay)) {
         if(timeCheck(9,00,9,30)) {
             onGoingClass("MA111", "tue-1")
-        } else if(timeCheck(9,45,10,15)) {
+        } else if(timeCheck(00,00,10,15)) {
             onGoingClass("PSC", "tue-2")
         } else if (timeCheck(10,30,11,45)) {
             onGoingClass("CS111", "tue-3")
