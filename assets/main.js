@@ -75,7 +75,7 @@ const checkDayAndTime = (currentDay) => {
     } else if (dayCheck("Tuesday", currentDay)) {
         if(timeCheck(9,00,9,30)) {
             onGoingClass("MA111", "tue-1")
-        } else if(timeCheck(00,45,10,15)) {
+        } else if(timeCheck(9,45,10,15)) {
             onGoingClass("PSC", "tue-2")
         } else if (timeCheck(10,30,11,45)) {
             onGoingClass("CS111", "tue-3")
@@ -115,6 +115,7 @@ const checkDayAndTime = (currentDay) => {
 
 const countTime = setInterval(() => {
   const time = new Date();
+
   const currentDate = `${time.toString().slice(4, 10)}, ${time.getFullYear()}`;
   const currentDay = time.toLocaleString("default", { weekday: "long" });
   
@@ -126,6 +127,4 @@ const countTime = setInterval(() => {
   //which class is ongoin now
   checkDayAndTime(currentDay);
 }, 1000);
-
-
 
