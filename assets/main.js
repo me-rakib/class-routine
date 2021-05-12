@@ -3,6 +3,7 @@ const showClass = (idName, value) => {
   const btnName = document.getElementById(idName);
   btnName.textContent = value;
 };
+showClass("mon-1-1", routine.MON.class1_1.class);
 showClass("mon-1", routine.MON.class1.class);
 showClass("mon-2", routine.MON.class2.class);
 showClass("mon-3", routine.MON.class3.class);
@@ -17,7 +18,7 @@ showClass("wed-3", routine.WED.class3.class);
 showClass("wed-4", routine.WED.class4.class);
 
 showClass("thu-1", routine.THU.class1.class);
-showClass("thu-2", routine.THU.class2.class);
+// showClass("thu-2", routine.THU.class2.class);
 showClass("thu-3", routine.THU.class3.class);
 showClass("thu-4", routine.THU.class4.class);
 
@@ -56,7 +57,7 @@ const timeCheck = (startH, startM, endH, endM) => {
   currentTime = currentTime.slice(12, 20);
   const timeStart = `${startH}:${startM}:00`;
   const timeEnd = `${endH}:${endM}:00`;
-  console.log(timeStart);
+  // console.log(timeStart);
   if (currentTime >= timeStart && currentTime < timeEnd) {
     return true;
   } else {
@@ -67,7 +68,9 @@ const timeCheck = (startH, startM, endH, endM) => {
 // if day and time true then select class
 const checkDayAndTime = (currentDay) => {
   if (dayCheck("Monday", currentDay)) {
-    if (timeCheck(9, 00, 9, 30)) {
+    if (timeCheck(8, 15, 8, 45)) {
+      onGoingClass("PY110", "mon-1-1");
+    } else if (timeCheck(9, 00, 9, 30)) {
       onGoingClass("PSC", "mon-1");
     } else if (timeCheck(10, 30, 11, 45)) {
       onGoingClass("PH111", "mon-2");
@@ -95,9 +98,11 @@ const checkDayAndTime = (currentDay) => {
   } else if (dayCheck("Thursday", currentDay)) {
     if (timeCheck(8, 15, 8, 45)) {
       onGoingClass("ME110", "thu-1");
-    } else if (timeCheck(9, 00, 9, 30)) {
-      onGoingClass("PH110", "thu-2");
-    } else if (timeCheck(10, 30, 11, 45)) {
+    }
+    //  else if (timeCheck(9, 00, 9, 30)) {
+    //   onGoingClass("PH110", "thu-2");
+    // } 
+    else if (timeCheck(10, 30, 11, 45)) {
       onGoingClass("PSC", "thu-3");
     } else if (timeCheck(14, 00, 14, 30)) {
       onGoingClass("ME111", "thu-4");

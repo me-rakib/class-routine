@@ -1,5 +1,9 @@
 const routine = {
     MON: {
+        class1_1: {
+            time: "8:15-8.450",
+            class: "PY110"
+        },
         class1: {
             time: "9:00-9.30",
             class: "PSC"
@@ -50,10 +54,10 @@ const routine = {
             time: "8:15-8.45",
             class: "ME110"
         },
-        class2: {
-            time: "9:00-9.30",
-            class: "PY110"
-        },
+        // class2: {
+        //     time: "9:00-9.30",
+        //     class: "PY110"
+        // },
         class3: {
             time: "10:30-11.45",
             class: "PSC"
