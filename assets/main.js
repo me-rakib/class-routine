@@ -58,7 +58,7 @@ const timeCheck = (startH, startM, endH, endM) => {
   const timeStart = `${startH}:${startM}:00`;
   const timeEnd = `${endH}:${endM}:00`;
   // console.log(timeStart);
-  if (currentTime >= timeStart && currentTime < timeEnd) {
+  if (currentTime >= timeStart && currentTime <= timeEnd) {
     return true;
   } else {
     return false;
