@@ -14,12 +14,6 @@ p {
   width: 5.5rem;
   height: 5.5rem;
 }
-.take-middle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 
 .font-size-5 {
   font-size: 0.7rem;
@@ -53,6 +47,12 @@ p {
     .nitk-title {
         font-size: 18px !important;
     }
+    .take-middle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
     .font-size-12 {
         font-size: 12px;
     }
