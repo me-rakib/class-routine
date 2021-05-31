@@ -4,3 +4,5 @@ Static website. Currently, it is showing date, day and Indian Standard Time and 
 Live preview - https://class-routine.vercel.app/
 
 ![image](https://user-images.githubusercontent.com/46087361/118268541-51528000-b4df-11eb-85ed-99e5dc63633b.png)
+
+Code is totally messed up here, I have some plan with this project. I will fix everything that time.  
