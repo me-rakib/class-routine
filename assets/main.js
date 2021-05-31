@@ -55,10 +55,17 @@ const timeCheck = (startH, startM, endH, endM) => {
     timeZone: "Asia/Kolkata",
   });
   currentTime = currentTime.slice(12, 20);
-  const timeStart = `${startH}:${startM}:00`;
-  const timeEnd = `${endH}:${endM}:00`;
-  // console.log(timeStart);
-  if (currentTime >= timeStart && currentTime <= timeEnd) {
+
+  //convert into second
+  const convertToSecond = (hour, min, sec) => {
+    return (hour*3600 + min*60 + sec)
+  }
+  const currentTimeArr = currentTime.split(":")
+  const currentSecond = convertToSecond(currentTimeArr[0], currentTimeArr[1], currentTimeArr[2])
+  const startSec = convertToSecond(startH, startM, 00)
+  const endSec = convertToSecond(endH, endM, 00)
+  
+  if (currentSecond >= startSec && currentSecond <= endSec) {
     return true;
   } else {
     return false;
