@@ -58,13 +58,22 @@ const timeCheck = (startH, startM, endH, endM) => {
 
   //convert into second
   const convertToSecond = (hour, min, sec) => {
-    return (hour*3600 + min*60 + sec)
-  }
-  const currentTimeArr = currentTime.split(":")
-  const currentSecond = convertToSecond(currentTimeArr[0], currentTimeArr[1], currentTimeArr[2])
-  const startSec = convertToSecond(startH, startM, 00)
-  const endSec = convertToSecond(endH, endM, 00)
-  
+    return hour * 3600 + min * 60 + sec;
+  };
+  const currentTimeArr = currentTime.split(":");
+  const currentSecond = convertToSecond(
+    currentTimeArr[0],
+    currentTimeArr[1],
+    parseInt(currentTimeArr[2])
+  );
+  const startSec = convertToSecond(startH, startM, 00);
+  const endSec = convertToSecond(endH, endM, 00);
+
+  //for checking 
+  console.log(`Current Second = ${currentSecond}`);
+  console.log(`Starting Second = ${startSec}`);
+  console.log(`Ending Second = ${endSec}`);
+
   if (currentSecond >= startSec && currentSecond <= endSec) {
     return true;
   } else {
@@ -108,7 +117,7 @@ const checkDayAndTime = (currentDay) => {
     }
     //  else if (timeCheck(9, 00, 9, 30)) {
     //   onGoingClass("PH110", "thu-2");
-    // } 
+    // }
     else if (timeCheck(10, 30, 11, 45)) {
       onGoingClass("PSC", "thu-3");
     } else if (timeCheck(14, 00, 14, 30)) {
