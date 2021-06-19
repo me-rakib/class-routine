@@ -152,3 +152,5 @@ const countTime = setInterval(() => {
   //which class is ongoin now
   checkDayAndTime(currentDay);
 }, 1000);
+
+console.log("This webpage is a fun project. Don't take data as guaranteed")

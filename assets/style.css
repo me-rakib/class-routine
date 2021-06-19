@@ -2,7 +2,11 @@
 .font-play {
   font-family: "Play";
 }
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   background-color: #121212;
   color: #fff;
@@ -43,18 +47,20 @@ p {
 }
 
 @media only screen and (max-width: 480px) {
-
-    .nitk-title {
-        font-size: 18px !important;
-    }
-    .font-size-12 {
-        font-size: 12px;
-    }
-    table p {
-       font-size: 12px;
-    }
-    .font-size-5 {
-        font-size: 10px;
-    } 
- 
- }
+  .nitk-logo {
+    width: 4rem;
+    height: 4rem;
+  }
+  .nitk-title {
+    font-size: 18px !important;
+  }
+  .font-size-12 {
+    font-size: 12px;
+  }
+  table p {
+    font-size: 12px;
+  }
+  .font-size-5 {
+    font-size: 10px;
+  }
+}
