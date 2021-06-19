@@ -51,6 +51,9 @@ p {
     width: 4rem;
     height: 4rem;
   }
+  .margin-sm {
+    margin-top: 3rem;
+  }
   .nitk-title {
     font-size: 18px !important;
   }
