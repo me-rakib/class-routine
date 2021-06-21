@@ -70,9 +70,9 @@ const timeCheck = (startH, startM, endH, endM) => {
   const endSec = convertToSecond(endH, endM, 00);
 
   //for checking 
-  console.log(`Current Second = ${currentSecond}`);
-  console.log(`Starting Second = ${startSec}`);
-  console.log(`Ending Second = ${endSec}`);
+  // console.log(`Current Second = ${currentSecond}`);s
+  // console.log(`Starting Second = ${startSec}`);
+  // console.log(`Ending Second = ${endSec}`);
 
   if (currentSecond >= startSec && currentSecond <= endSec) {
     return true;
