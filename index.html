@@ -2,319 +2,205 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!--Favicon-->
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
+    <!-- =========== FAVICON ========= -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
 
-  <!--Title-->
-  <title>Class Routine | NITK</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
-  <!-- CSS only -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous" />
+    <!-- =========== CSS ============ -->
+    <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!--Font Awesome-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-    crossorigin="anonymous" />
-
-  <!--Custom CSS-->
-  <link rel="stylesheet" href="assets/style.css" />
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9TWY2K72LH"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'G-9TWY2K72LH');
-  </script>
+    <title>Class Routine | CSE 3rd Semester</title>
 </head>
 
 <body>
-  <!--Header Section-->
-  <section class="container mb-3 font-play">
-    <div class="row mt-3 mb-2 mb-md-0">
-      <div class="col-7 col-sm-8 col-md-9 col-lg-10">
-        <img class="nitk-logo img-fluid" src="./assets/pic/nitk-logo.svg" alt="Logo of NITK" />
-      </div>
-      <div class="col-5 col-sm-4 col-md-3 col-lg-2 font-size-12">
-        <p>Date: <span id="date"></span></p>
-        <p>Day: <span id="day"></span></p>
-        <p>Time: <span id="time"></span><span> (IST)</span></p>
-        <p class="text-warning">
-          Ongoing: <span class="ongoing-animated" id="class-name">Break</span>
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!--Table Section-->
-  <section class="container font-play margin-sm">
-    <div>
-      <div class="nitk-name text-center">
-        <div class="mb-3">
-          <p class="fs-4 text-uppercase nitk-title">
-            National Institute of Technology Surathkal, Karnataka
-          </p>
-          <p class="text-capitalize text-decoration-underline font-size-12">
-            Time table for session(April-Sept.2021)
-          </p>
+    <div class="home section grid">
+        <div class="home__logo grid">
+            <img src="./assets/img/nitk-logo.svg">
         </div>
-        <div class="row mb-2 mb-sm-3 text-capitalize font-size-12">
-          <div class="col-4">
-            <span>b.Tech. (II-Sem.)</span>
-          </div>
-          <div class="col-4">
-            <span>Section S8: (CSE)</span>
-          </div>
-          <div class="col-4">
-            <span>Physics Cycle</span>
-          </div>
+
+        <div class="home__title">
+            <h2>National Institute of Technology Karnataka, Surathkal</h2>
+            <p>Class Routine</p>
         </div>
-      </div>
+        <div class="home__status">
+            <p>Ongoing: <span>Break</span></p>
+        </div>
 
-      <!--Routine Table-->
-      <div class="table-responsive">
-        <table class="
-              mb-0
-              table table-sm table-bordered
-              text-center
-              table-dark table-striped
-            ">
-          <tbody>
-            <tr class="text-warning">
-              <td>
-                <p>Period <i class="fas fa-long-arrow-alt-right"></i></p>
-                <p>Day <i class="fas fa-long-arrow-alt-down"></i></p>
-              </td>
-              <td>
-                <p>1</p>
-                <p>8:15-8:45</p>
-              </td>
-              <td>
-                <p>2</p>
-                <p>9:00-9:30</p>
-              </td>
-              <td>
-                <p>3</p>
-                <p>9:45-10:15</p>
-              </td>
-              <td>
-                <p>4</p>
-                <p>10:30-11:00</p>
-              </td>
-              <td>
-                <p>5</p>
-                <p>11:15-11:45</p>
-              </td>
-              <td>
-                <p>Lunch Break</p>
-                <p>12:00-13:00</p>
-              </td>
-              <td>
-                <p>6</p>
-                <p>13:15-13:45</p>
-              </td>
-              <td>
-                <p>7</p>
-                <p>14:00-14:30</p>
-              </td>
-              <td>
-                <p>8</p>
-                <p>14:45-15:15</p>
-              </td>
-              <td>
-                <p>9</p>
-                <p>15:30-16:00</p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <p>MON</p>
-              </td>
-              <td>
-                <p id="mon-1-1"></p>
-              </td>
-              <td>
-                <p id="mon-1"></p>
-              </td>
-              <td>
-                <p>-</p>
-              </td>
-              <td colspan="2">
-                <p id="mon-2"></p>
-              </td>
-              <td></td>
-              <td>
-                <p>-</p>
-              </td>
-              <td>
-                <p id="mon-3"></p>
-              </td>
-              <td>
-                <p>-</p>
-              </td>
-              <td>
-                <p>-</p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <p>TUE</p>
-              </td>
-              <td>
-                <p>-</p>
-              </td>
-              <td>
-                <p id="tue-1"></p>
-              </td>
-              <td>
-                <p id="tue-2"></p>
-              </td>
-              <td colspan="2">
-                <p id="tue-3"></p>
-              </td>
-              <td></td>
-              <td>
-                <p>-</p>
-              </td>
-              <td>
-                <p>-</p>
-              </td>
-              <td>
-                <p>-</p>
-              </td>
-              <td>
-                <p>-</p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <p>WED</p>
-              </td>
-              <td>
-                <p id="wed-1"></p>
-              </td>
-              <td>
-                <p>-</p>
-              </td>
-              <td>
-                <p>-</p>
-              </td>
-              <td>
-                <p id="wed-2"></p>
-              </td>
-              <td>
-                <p id="wed-3"></p>
-              </td>
-              <td></td>
-              <td>
-                <p>-</p>
-              </td>
-              <td colspan="2">
-                <p id="wed-4"></p>
-              </td>
-              <td>
-                <p>-</p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <p>THU</p>
-              </td>
-              <td>
-                <p id="thu-1"></p>
-              </td>
-              <td>
-                <p>-</p>
-              </td>
-              <td>
-                <p>-</p>
-              </td>
-              <td colspan="2">
-                <p id="thu-3"></p>
-              </td>
-              <td></td>
-              <td>
-                <p>-</p>
-              </td>
-              <td>
-                <p id="thu-4"></p>
-              </td>
-              <td>
-                <p>-</p>
-              </td>
-              <td>
-                <p>-</p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <p>FRI</p>
-              </td>
-              <td>
-                <p id="fri-1"></p>
-              </td>
-              <td>
-                <p>-</p>
-              </td>
-              <td>
-                <p id="fri-2"></p>
-              </td>
-              <td colspan="2">
-                <p id="fri-3"></p>
-              </td>
-              <td></td>
-              <td>
-                <p>-</p>
-              </td>
-              <td colspan="3">
-                <p id="fri-4"></p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <p class="text-center font-size-5 text-secondary mt-1">
-        *Last Update on Saturday, June 19, 2021
-      </p>
+        <div class="home__timing grid">
+            <div class="home__timing-time">
+                <p>Friday, July 23, 2021</p>
+                <p>10:15:59 (IST)</p>
+            </div>
+
+            <div class="home__timing-sem flex">
+                <p>CSE||B.Tech 3<sup>rd</sup> Semester</p>
+            </div>
+        </div>
+
+        <div class="home__routine">
+            <div class="home__routine-table table-responsive">
+                <table class="mb-0 table table-sm table-bordered text-center table-dark table-striped align-middle">
+                    <tbody>
+                        <tr>
+                            <td rowspan="4">Day</td>
+                            <td rowspan="4">Sem</td>
+                            <td colspan="12">Time</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">1</td>
+                            <td rowspan="2">2</td>
+                            <td rowspan="2">3</td>
+                            <td rowspan="2">4</td>
+                            <td>5</td>
+                            <td rowspan="2"></td>
+                            <td>6</td>
+                            <td rowspan="2">7</td>
+                            <td rowspan="2">8</td>
+                            <td rowspan="2">9</td>
+                            <td rowspan="2">10</td>
+                            <td rowspan="2">11</td>
+                        </tr>
+                        <tr>
+                            <td>Minor</td>
+                            <td>Honours</td>
+                        </tr>
+                        <tr class="text-warning">
+                            <td>8.15 - 8.45</td>
+                            <td>9.00 - 9.30</td>
+                            <td>9.45 - 10.15</td>
+                            <td>10.30 - 11.00</td>
+                            <td>11.15 - 11.45</td>
+                            <td>12.00 - 13.15</td>
+                            <td>13.15 - 13.45</td>
+                            <td>14.00 - 14.30</td>
+                            <td>14.45 - 15.15</td>
+                            <td>15.30 - 16.00</td>
+                            <td>16.15 - 16.45</td>
+                            <td> 17.00 - 17.30</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">MON</td>
+                            <td>S1</td>
+                            <td rowspan="2"></td>
+                            <td rowspan="2">CS201</td>
+                            <td rowspan="2">CS200</td>
+                            <td rowspan="2">CS202</td>
+                            <td rowspan="2"></td>
+                            <td rowspan="8">Break</td>
+                            <td rowspan="2"></td>
+                            <td>MA204</td>
+                            <td colspan="3" rowspan="2">CS203</td>
+                            <td rowspan="2"></td>
+                        </tr>
+                        <tr>
+                            <td>S2</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">TUE</td>
+                            <td>S1</td>
+                            <td rowspan="2"></td>
+                            <td></td>
+                            <td rowspan="2">CS201</td>
+                            <td rowspan="2">CS200</td>
+                            <td rowspan="2"></td>
+                            <td rowspan="2"></td>
+                            <td>MA204</td>
+                            <td colspan="3" rowspan="2">CS204</td>
+                            <td rowspan="2"></td>
+                        </tr>
+                        <tr>
+                            <td>S2</td>
+                            <td>MA204</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">WED</td>
+                            <td>S1</td>
+                            <td rowspan="2"></td>
+                            <td rowspan="2">CS202</td>
+                            <td></td>
+                            <td rowspan="2">CS201</td>
+                            <td rowspan="2"></td>
+                            <td rowspan="2"></td>
+                            <td>MA204</td>
+                            <td rowspan="2"></td>
+                            <td rowspan="2"></td>
+                            <td rowspan="2"></td>
+                            <td rowspan="2"></td>
+                            
+                        </tr>
+                        <tr>
+                            <td>S2</td>
+                            <td>MA204</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">THU</td>
+                            <td>S1</td>
+                            <td rowspan="2"></td>
+                            <td rowspan="2">CS201</td>
+                            <td rowspan="2">CS202</td>
+                            <td></td>
+                            <td rowspan="2"></td>
+                            <td rowspan="2"></td>
+                            <td rowspan="2"></td>
+                            <td rowspan="2"></td>
+                            <td rowspan="2"></td>
+                            <td rowspan="2"></td>
+                            <td rowspan="2"></td>
+                            
+                        </tr>
+                        <tr>
+                            <td>S2</td>
+                            <td>MA204</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">FRI</td>
+                            <td>S1</td>
+                            <td rowspan="2"></td>
+                            <td rowspan="2"></td>
+                            <td rowspan="2">CS200</td>
+                            <td rowspan="2">CS202</td>
+                            <td rowspan="2"></td>
+                            <td rowspan="2"></td>
+                            <td rowspan="2"></td>
+                            <td rowspan="2"></td>
+                            <td rowspan="2"></td>
+                            <td rowspan="2"></td>
+                            <td rowspan="2"></td>
+                            <td rowspan="2"></td>
+                        </tr>
+                        <tr>
+                            <td>S2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="home__footer">
+            <p>Total Visit: 100</p>
+            <p>Copyright &#169; 2021 | Md Rakib Hasan</p>
+        </div>
     </div>
-  </section>
 
-  <!--Footer & Copyright-->
-  <footer>
-    <div class="
-          mb-1
-          mt-2
-          font-size-5
-          text-center text-secondary
-          fixed-bottom
-          font-play
-        ">
-      <p>Total Views: <span id="view-count"></span></p>
-      Copyright © 2021 | Md Rakib Hasan
-    </div>
-  </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    </script>
 
-  <!-- JavaScript Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous">
-  </script>
-
-  <!--Custom JS-->
-  <script src="./assets/data.js"></script>
-  <script src="assets/main.js"></script>
-  <script src="assets/count.js"></script>
+    <!-- ========== JS ========== -->
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
