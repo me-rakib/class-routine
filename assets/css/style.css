@@ -13,10 +13,9 @@
     /* ====== Font & Typography ===== */
     --font-title: 'Ubuntu', sans-serif;
     --font-text: 'Play', sans-serif;
-    --font-size-25: 25px;
-    --font-size-20: 20px;
-    --font-size-16: 16px;
-    --font-size-14: 14px;
+    --font-size-1-5: 1.5rem;
+    --font-size-0-8-status: .8rem;
+    --font-size-0-8: .8rem;
 }
 
 /* =========== REUSEABLE CLASS ========== */
@@ -50,7 +49,7 @@ a {
 body {
     width: 100%;
     height: 100vh;
-    color:var(--color-white);
+    color: var(--color-white);
     font-family: var(--font-title);
     background-color: var(--body-color-first);
 }
@@ -83,7 +82,17 @@ body {
 }
 
 .home__title {
-    padding: 1rem 0 !important;
+    padding: .2rem 0 !important;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home__title h2 {
+    font-size: var(--font-size-1-5);
+}
+
+.home__title p {
+    font-size: var(--font-size-0-8);
 }
 
 .home__status {
@@ -97,9 +106,35 @@ body {
     border-radius: 10px;
 }
 
+.home__status span {
+    color: var(--color-status);
+}
+
+.home__timing {
+    grid-column: 2 / -1;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+
+.home__timing-date,
+.home__timing-time,
+.home__timing-sem {
+    background-color: var(--body-color-second);
+    padding: .2rem 0 !important;
+    border-radius: 10px;
+    font-size: var(--font-size-0-8-status);
+    justify-content: center;
+    align-items: center;
+}
+
+.home__timing-time {
+    justify-content: space-evenly;
+}
+
 .home__routine {
     grid-row: 4 /-2;
     position: relative;
+    overflow: auto;
 }
 
 table {
@@ -107,23 +142,6 @@ table {
     height: 100%;
 }
 
-.home__timing{
-    grid-column: 2 / -1;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1rem;
-}
-
-.home__timing-time,
-.home__timing-sem {
-    background-color: var(--body-color-second);
-    padding: .5rem 0 !important;
-    border-radius: 10px;
-}
-
-.home__timing-sem {
-    justify-content: center;
-    align-items: center;
-}
 
 .home__routine-table {
     font-size: 14px;
@@ -135,15 +153,15 @@ table {
     width: 100%;
     height: 100%;
 }
+
 .home__footer {
-    font-size: 10px; 
-    padding: .5rem 0 !important;
+    font-size: .5rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem !important;
 }
 
-.home__routine {
-    overflow: auto;
-}
-
+/* ========== SCROLL BAR ========== */
 ::-webkit-scrollbar {
     width: .3rem;
     height: .3rem;
@@ -152,4 +170,34 @@ table {
 
 ::-webkit-scrollbar-thumb {
     background-color: #ffc107c9
+}
+
+/* ========== SMALL SCREEN ========== */
+@media screen and (max-width: 480px) {
+    :root {
+        --font-size-1-5: .8rem;
+        --font-size-0-8: .6rem;
+        --font-size-0-8-status: .7rem;
+    }
+
+    .home__logo {
+        grid-row: 1 / 2;
+        width: 50px;
+        background: none;
+    }
+
+    .home__status,
+    .home__routine,
+    .home__footer {
+        grid-column: 1 / -1;
+    }
+
+    .home__status {
+        background: none;
+    }
+
+    .home__timing {
+        grid-column: 1 / -1;
+        grid-gap: .5rem;
+    }
 }
