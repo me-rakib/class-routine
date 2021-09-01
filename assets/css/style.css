@@ -222,12 +222,12 @@ td {
     }
 
     table {
-        width: 220% !important;
+        width: 170% !important;
         height: 100%;
     }
 
     td {
-        font-size: 12px;
+        font-size: 10px;
     }
 
 }
