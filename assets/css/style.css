@@ -215,7 +215,14 @@ td {
 
 /* ========== SMALL SCREEN ========== */
 @media screen and (max-width: 480px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .section {
+        width: 404px;
+        height: 719px;
         padding: 10px !important;
     }
 
