@@ -65,7 +65,7 @@ body {
 /* =========== REUSEABLE CLASS ========== */
 .section {
     padding: 3.5rem 0 1.5rem !important;
-    max-width: 90vw;
+    max-width: 1150px;
 }
 
 .grid {
