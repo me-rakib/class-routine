@@ -65,9 +65,7 @@ body {
 /* =========== REUSEABLE CLASS ========== */
 .section {
     padding: 3.5rem 0 1.5rem !important;
-    max-width: 968px;
 }
-
 
 .grid {
     display: grid;
@@ -224,8 +222,8 @@ td {
         overflow: hidden;
     }
     .section {
-        min-width: 360px;
-        min-height: 620px;
+        max-width: 360px;
+        max-height: 620px;
         padding: 10px !important;
     }
 
@@ -250,7 +248,7 @@ td {
     }
 
     table {
-        width: 250% !important;
+        width: 230% !important;
     }
 
     td {
