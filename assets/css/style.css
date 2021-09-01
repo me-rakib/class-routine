@@ -16,6 +16,10 @@
     --font-size-1-5: 1.5rem;
     --font-size-0-8-status: .8rem;
     --font-size-0-8: .8rem;
+
+    /* ===== Border Radius ===== */
+    --border-radius: 10px;
+
 }
 
 /* =========== REUSEABLE CLASS ========== */
@@ -61,14 +65,14 @@ body {
     text-align: center;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
-    grid-gap: .5rem;
+    grid-row-gap: .5rem;
 }
 
 .home__logo {
     grid-row: 1 / -1;
     background-color: var(--body-color-second);
     align-items: center;
-    border-radius: 10px;
+    border-radius: var(--border-radius);
     width: 70px;
 }
 
@@ -78,7 +82,7 @@ body {
 .home__footer {
     grid-column: 2 / -1;
     background-color: var(--body-color-second);
-    border-radius: 10px;
+    border-radius: var(--border-radius);
 }
 
 .home__title {
@@ -103,14 +107,14 @@ body {
     display: inline-block;
     padding: .5rem 2rem !important;
     background-color: var(--body-color-second);
-    border-radius: 10px;
+    border-radius: var(--border-radius);
 }
 
 
 .home__timing {
     grid-column: 2 / -1;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1rem;
+    grid-column-gap: 1rem;
 }
 
 .home__timing-date,
@@ -118,7 +122,7 @@ body {
 .home__timing-sem {
     background-color: var(--body-color-second);
     padding: .2rem 0 !important;
-    border-radius: 10px;
+    border-radius: var(--border-radius);
     font-size: var(--font-size-0-8-status);
     justify-content: center;
     align-items: center;
@@ -179,6 +183,7 @@ td {
         --font-size-1-5: .8rem;
         --font-size-0-8: .6rem;
         --font-size-0-8-status: .7rem;
+        --border-radius: 0;
     }
 
     .section {
@@ -199,15 +204,10 @@ td {
     .home__routine,
     .home__footer {
         grid-column: 1 / -1;
-        border-radius: 0;
     }
 
     .home__status {
         background: none;
-    }
-
-    .home__status p{
-        border-radius: 0;
     }
 
     .home__timing {
@@ -215,19 +215,13 @@ td {
         grid-gap: .5rem;
     }
 
-    .home__timing-date,
-    .home__timing-time,
-    .home__timing-sem {
-        border-radius: 0;
-    }
-
     table {
-        width: 250% !important;
+        width: 200% !important;
         height: 100%;
     }
 
     td {
-        font-size: 10px;
+        font-size: 8px;
     }
 
 }
