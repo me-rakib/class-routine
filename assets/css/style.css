@@ -113,6 +113,7 @@ body {
     padding: .5rem 1rem !important;
     background-color: var(--body-color-second);
     border-radius: var(--border-radius);
+    font-size: var(--font-size-0-8-status);
 }
 
 /* ========== DATE & TIME ========== */
@@ -214,10 +215,6 @@ td {
     .home__routine,
     .home__footer {
         grid-column: 1 / -1;
-    }
-
-    .home__status p {
-        font-size: .5rem;
     }
 
     .home__timing {
