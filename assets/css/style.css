@@ -154,6 +154,10 @@ table {
     height: 100%;
 }
 
+td {
+    font-family: var(--font-text);
+}
+
 .home__footer {
     font-size: .5rem;
     justify-content: space-between;
@@ -180,6 +184,10 @@ table {
         --font-size-0-8-status: .7rem;
     }
 
+    .section {
+        padding: 10px !important;
+    }
+
     .home__logo {
         grid-row: 1 / 2;
         width: 50px;
@@ -200,4 +208,9 @@ table {
         grid-column: 1 / -1;
         grid-gap: .5rem;
     }
+    
+    td {
+        font-size: 12px;
+    }
+
 }
