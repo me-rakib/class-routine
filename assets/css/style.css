@@ -35,13 +35,13 @@
 
 /* ========== VARIABLE DARK THEME ========== */
 body.dark-theme {
-    --body-color-first: #fff;
-    --body-color-second: #1F1F1F;
-    --color-white: #fff;
-    --color-title: #ffc107;
+    --body-color-first: #F2F4FB;
+    --body-color-second: #FFFFFF;
+    --color-white: #000;
+    --color-title: #6E00FF;
     --color-status: #FF3D68;
-    --color-hover: #ffc107;
-    --color-footer: #6C757D;
+    --color-hover: #6E00FF;
+    --color-footer: #121212;
 }
 
 /* ========== BASE ========== */
@@ -116,6 +116,15 @@ a {
     padding: .2rem 0 !important;
     flex-direction: column;
     justify-content: center;
+    position: relative;
+}
+
+.home__title i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    cursor: pointer;
 }
 
 .home__title h2 {
@@ -185,6 +194,13 @@ table {
     height: 100%;
 }
 
+.table__text {
+    color: var(--color-white);
+}
+
+.table__header-color {
+    color: var(--color-title);
+}
 td {
     font-family: var(--font-text);
 }

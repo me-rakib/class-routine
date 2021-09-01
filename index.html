@@ -11,7 +11,10 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
 
-    <!-- CSS only -->
+    <!-- ========== BOX ICON ========== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    
+    <!-- ========== BOOTSTRAP ==========CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
@@ -43,6 +46,7 @@
         <div class="home__title flex">
             <h2>National Institute of Technology Karnataka, Surathkal</h2>
             <p>Class Routine</p>
+            <i class='bx bxs-moon change-theme' id="theme-button"></i>
         </div>
         <div class="home__status">
             <p>Ongoing: <span class="ongoing-animated"> Break</span></p>
@@ -65,7 +69,7 @@
         <div class="home__routine">
             <div class="home__routine-table table-responsive">
                 <table class="mb-0 table table-sm teble-bordered border-secondary text-center align-middle">
-                    <tbody class="text-white">
+                    <tbody class="table__text">
                         <tr>
                             <td rowspan="4">Day</td>
                             <td rowspan="4">Sem</td>
@@ -89,7 +93,7 @@
                             <td>Minor</td>
                             <td>Honours</td>
                         </tr>
-                        <tr class="text-warning">
+                        <tr class="table__header-color">
                             <td>8.15 - 8.45</td>
                             <td>9.00 - 9.30</td>
                             <td>9.45 - 10.15</td>
@@ -104,7 +108,7 @@
                             <td> 17.00 - 17.30</td>
                         </tr>
                         <tr>
-                            <td class="text-warning" rowspan="2">MON</td>
+                            <td class="table__header-color" rowspan="2">MON</td>
                             <td>S1</td>
                             <td rowspan="2">-</td>
                             <td rowspan="2">CS201</td>
@@ -122,7 +126,7 @@
                             <td></td>
                         </tr>
                         <tr>
-                            <td class="text-warning" rowspan="2">TUE</td>
+                            <td class="table__header-color" rowspan="2">TUE</td>
                             <td>S1</td>
                             <td rowspan="2">-</td>
                             <td></td>
@@ -140,7 +144,7 @@
                             <td></td>
                         </tr>
                         <tr>
-                            <td class="text-warning" rowspan="2">WED</td>
+                            <td class="table__header-color" rowspan="2">WED</td>
                             <td>S1</td>
                             <td rowspan="2">-</td>
                             <td rowspan="2">CS202</td>
@@ -161,7 +165,7 @@
                             <td></td>
                         </tr>
                         <tr>
-                            <td class="text-warning" rowspan="2">THU</td>
+                            <td class="table__header-color" rowspan="2">THU</td>
                             <td>S1</td>
                             <td rowspan="2">-</td>
                             <td rowspan="2">CS201</td>
@@ -181,7 +185,7 @@
                             <td>MA204</td>
                         </tr>
                         <tr>
-                            <td class="text-warning" rowspan="2">FRI</td>
+                            <td class="table__header-color" rowspan="2">FRI</td>
                             <td>S1</td>
                             <td rowspan="2">-</td>
                             <td rowspan="2">-</td>
