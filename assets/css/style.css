@@ -207,7 +207,6 @@ td {
     .home__logo {
         grid-row: 1 / 2;
         width: 35px;
-        border-radius: 5px;
     }
 
     .home__status,
