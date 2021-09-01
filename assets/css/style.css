@@ -220,30 +220,14 @@ td {
     }
 
     .home__logo {
-        grid-row: 2 / 3;
+        grid-row: 1 / 2;
         width: 35px;
-    }
-
-    .home__title {
-        grid-row: 2 / 3;
-    }
-
-    .home__status {
-        grid-row: 3 / 4;
-    }
-
-    .home__timing {
-        grid-row: 4/5;
     }
 
     .home__status,
     .home__routine,
     .home__footer {
         grid-column: 1 / -1;
-    }
-
-    .home__routine {
-        grid-row: 5 / -3;
     }
 
     .home__footer {
