@@ -106,9 +106,9 @@ body {
     border-radius: 10px;
 }
 
-.home__status span {
+/* .home__status span {
     color: var(--color-status);
-}
+} */
 
 .home__timing {
     grid-column: 2 / -1;
