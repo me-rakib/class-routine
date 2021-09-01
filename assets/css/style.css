@@ -105,6 +105,7 @@ body {
 /* ========== ONGOING STATUS ========== */
 .home__status {
     background: none;
+    align-self: center;
 }
 
 .home__status p {
@@ -215,8 +216,8 @@ td {
         grid-column: 1 / -1;
     }
 
-    .home__status {
-        background: none;
+    .home__status p {
+        font-size: .5rem;
     }
 
     .home__timing {
