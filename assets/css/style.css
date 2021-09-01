@@ -119,7 +119,7 @@ a {
     position: relative;
 }
 
-.home__title i{
+.home__title i {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -201,6 +201,7 @@ table {
 .table__header-color {
     color: var(--color-title);
 }
+
 td {
     font-family: var(--font-text);
 }
@@ -238,6 +239,7 @@ td {
     body {
         overflow: hidden;
     }
+
     .section {
         max-width: 360px;
         max-height: 620px;
@@ -247,6 +249,12 @@ td {
     .home__logo {
         grid-row: 1 / 2;
         width: 35px;
+    }
+
+    .home__title i {
+        position: absolute;
+        right: 0;
+        top: 100%;
     }
 
     .home__status,
