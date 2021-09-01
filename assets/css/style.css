@@ -222,8 +222,8 @@ td {
     }
     .section {
         width: 360px;
-        height: 640px;
-        padding: 15px !important;
+        height: 630px;
+        padding: 10px !important;
     }
 
     .home__logo {
