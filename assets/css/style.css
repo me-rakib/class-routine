@@ -9,6 +9,8 @@
     --color-white: #fff;
     --color-title: #ffc107;
     --color-status: #FF3D68;
+    --color-hover: #ffc107;
+    --color-footer: #6C757D;
 
     /* ====== Font & Typography ===== */
     --font-title: 'Ubuntu', sans-serif;
@@ -41,6 +43,7 @@ img {
 
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 /* ========== BASE ========== */
@@ -99,6 +102,7 @@ body {
     font-size: var(--font-size-0-8);
 }
 
+/* ========== ONGOING STATUS ========== */
 .home__status {
     background: none;
 }
@@ -110,7 +114,7 @@ body {
     border-radius: var(--border-radius);
 }
 
-
+/* ========== DATE & TIME ========== */
 .home__timing {
     grid-column: 2 / -1;
     grid-template-columns: repeat(3, 1fr);
@@ -121,7 +125,7 @@ body {
 .home__timing-time,
 .home__timing-sem {
     background-color: var(--body-color-second);
-    padding: .2rem  0!important;
+    padding: .2rem 0 !important;
     border-radius: var(--border-radius);
     font-size: var(--font-size-0-8-status);
     justify-content: center;
@@ -132,6 +136,7 @@ body {
     justify-content: space-evenly;
 }
 
+/* ========== ROUTINE ========== */
 .home__routine {
     grid-row: 4 /-2;
     position: relative;
@@ -142,7 +147,6 @@ table {
     width: 100% !important;
     height: 100%;
 }
-
 
 .home__routine-table {
     font-size: 14px;
@@ -159,12 +163,21 @@ td {
     font-family: var(--font-text);
 }
 
+/* ========== FOOTER ========== */
 .home__footer {
     font-size: .5rem;
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem !important;
-    color: #6C757D;
+    color: var(--color-footer);
+}
+
+.home__footer a {
+    color: var(--color-footer);
+}
+
+.home__footer a:hover {
+    color: var(--color-hover);
 }
 
 /* ========== SCROLL BAR ========== */
@@ -193,12 +206,8 @@ td {
 
     .home__logo {
         grid-row: 1 / 2;
-        width: 40px;
-        background: none;
-    }
-
-    .home__title {
-        border-radius: 0;
+        width: 35px;
+        border-radius: 5px;
     }
 
     .home__status,
