@@ -221,8 +221,8 @@ td {
         align-items: center;
     }
     .section {
-        width: 360px;
-        height: 620px;
+        /* width: 360px;
+        height: 620px; */
         padding: 10px !important;
     }
 
