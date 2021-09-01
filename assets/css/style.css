@@ -106,9 +106,6 @@ body {
     border-radius: 10px;
 }
 
-/* .home__status span {
-    color: var(--color-status);
-} */
 
 .home__timing {
     grid-column: 2 / -1;
@@ -138,7 +135,7 @@ body {
 }
 
 table {
-    width: 100%;
+    width: 100% !important;
     height: 100%;
 }
 
@@ -190,25 +187,45 @@ td {
 
     .home__logo {
         grid-row: 1 / 2;
-        width: 50px;
+        width: 40px;
         background: none;
+    }
+
+    .home__title {
+        border-radius: 0;
     }
 
     .home__status,
     .home__routine,
     .home__footer {
         grid-column: 1 / -1;
+        border-radius: 0;
     }
 
     .home__status {
         background: none;
     }
 
+    .home__status p{
+        border-radius: 0;
+    }
+
     .home__timing {
         grid-column: 1 / -1;
         grid-gap: .5rem;
     }
-    
+
+    .home__timing-date,
+    .home__timing-time,
+    .home__timing-sem {
+        border-radius: 0;
+    }
+
+    table {
+        width: 220% !important;
+        height: 100%;
+    }
+
     td {
         font-size: 12px;
     }
