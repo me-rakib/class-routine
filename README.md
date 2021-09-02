@@ -7,7 +7,9 @@ Live preview - https://class-routine.vercel.app/
 
 -v2.0.0
 
-![](./assets/screenshot/v2.0.0-mobile-dark.png)
+<div class="blogimage" style="float:right;width:300px;">
+    <img src="./assets/screenshot/v2.0.0-mobile-dark.png"/>
+</div>
 ![](./assets/screenshot/v2.0.0-desktop-dark.png)
 
 -v1.0.0
