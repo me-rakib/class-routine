@@ -8,8 +8,6 @@ Live preview - https://class-routine.vercel.app/
 -v2.0.0
 
 ![](./assets/screenshot/v2.0.0-mobile-dark.png)
-![](./assets/screenshot/v2.0.0-mobile-light.png)
-![](./assets/screenshot/v2.0.0-desktop-dark.png)
 ![](./assets/screenshot/v2.0.0-desktop-dark.png)
 
 -v1.0.0
