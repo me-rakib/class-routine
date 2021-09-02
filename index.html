@@ -11,9 +11,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
 
-    <!-- ========== BOX ICON ========== -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    
+    <!-- ========== Remix ICON ========== -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
     <!-- ========== BOOTSTRAP ==========CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
@@ -46,7 +46,7 @@
         <div class="home__title flex">
             <h2>National Institute of Technology Karnataka, Surathkal</h2>
             <p>Class Routine</p>
-            <i class='bx bxs-moon change-theme' id="theme-button"></i>
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
         </div>
         <div class="home__status">
             <p>Ongoing: <span class="ongoing-animated"> Break</span></p>
@@ -54,11 +54,11 @@
 
         <div class="home__timing grid">
             <div class="home__timing-date flex">
-                <p>Friday, July 23, 2021</p>
+                <p><span id="day">Friday</span>, <span id="date">July 23, 2021</span></p>
             </div>
 
             <div class="home__timing-time flex">
-                <p>10:15:59 (IST)</p>
+                <p><span id="time">10:15:59</span> (IST)</p>
             </div>
 
             <div class="home__timing-sem flex">
@@ -68,7 +68,7 @@
 
         <div class="home__routine">
             <div class="home__routine-table table-responsive">
-                <table class="mb-0 table table-sm teble-bordered border-secondary text-center align-middle">
+                <table class="mb-0 table table-sm table-border-color text-center align-middle">
                     <tbody class="table__text">
                         <tr>
                             <td rowspan="4">Day</td>
