@@ -5,13 +5,13 @@
 :root {
     /* ===== Color ===== */
     --body-color-first: #FCFCFC;
-    --body-color-second: #cbf3f03f;
-    --color-white: #1C2321;
-    --color-title: #F7567C;
+    --body-color-second: #F6F4F3;
+    --color-white: #1B2021;
+    --color-title: #D81E5B;
     --color-status: #FF3D68;
     --color-hover: #F7567C;
     --color-footer: #5D576B;
-    --table-border-color: #e6e4dd;
+    --table-border-color: #1b202128;
 
     /* ====== Font & Typography ===== */
     --font-title: 'Ubuntu', sans-serif;
@@ -215,7 +215,7 @@ td {
 
 /* ========== FOOTER ========== */
 .home__footer {
-    font-size: .5rem;
+    font-size: .6rem;
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem !important;
