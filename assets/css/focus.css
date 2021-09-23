@@ -1,7 +1,7 @@
 /* Animated text */
 .ongoing-animated {
   text-transform: uppercase;
-  background: linear-gradient(90deg,#000, #FF3D68);
+  background: linear-gradient(90deg, #000, #FF3D68, #000);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -15,6 +15,7 @@
   0% {
     background-position-x: -500%;
   }
+
   100% {
     background-position-x: 500%;
   }

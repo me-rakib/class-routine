@@ -30,6 +30,7 @@ showClass("fri-2", routine.FRI.class2.class);
 const showDate = document.getElementById("date");
 const showDay = document.getElementById("day");
 const showTime = document.getElementById("time");
+const ongoingBtn = document.getElementById("class-name");
 
 // ongoing class, if condition meet then show class name on ongoing status
 const onGoingClass = (className, classId) => {
