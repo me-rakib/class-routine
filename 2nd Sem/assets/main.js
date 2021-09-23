@@ -3,6 +3,7 @@ const showClass = (idName, value) => {
   const btnName = document.getElementById(idName);
   btnName.textContent = value;
 };
+
 showClass("mon-1-1", routine.MON.class1_1.class);
 showClass("mon-1", routine.MON.class1.class);
 showClass("mon-2", routine.MON.class2.class);
