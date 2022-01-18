@@ -1,30 +1,30 @@
 //class routine info
-const showClass = (idName, value) => {
-  const btnName = document.getElementById(idName);
-  btnName.textContent = value;
-};
+// const showClass = (idName, value) => {
+//   const btnName = document.getElementById(idName);
+//   btnName.textContent = value;
+// };
 
-showClass("mon-1", routine.MON.class1.class);
-showClass("mon-2", routine.MON.class2.class);
-showClass("mon-3", routine.MON.class3.class);
-showClass("mon-4", routine.MON.class4.class);
+// showClass("mon-1", routine.MON.class1.class);
+// showClass("mon-2", routine.MON.class2.class);
+// showClass("mon-3", routine.MON.class3.class);
+// showClass("mon-4", routine.MON.class4.class);
 
-showClass("tue-1", routine.TUE.class1.class);
-showClass("tue-2", routine.TUE.class2.class);
-showClass("tue-3", routine.TUE.class3.class);
-showClass("tue-4", routine.TUE.class4.class);
+// showClass("tue-1", routine.TUE.class1.class);
+// showClass("tue-2", routine.TUE.class2.class);
+// showClass("tue-3", routine.TUE.class3.class);
+// showClass("tue-4", routine.TUE.class4.class);
 
-showClass("wed-1", routine.WED.class1.class);
-showClass("wed-2", routine.WED.class2.class);
-showClass("wed-3", routine.WED.class3.class);
-showClass("wed-4", routine.WED.class4.class);
+// showClass("wed-1", routine.WED.class1.class);
+// showClass("wed-2", routine.WED.class2.class);
+// showClass("wed-3", routine.WED.class3.class);
+// showClass("wed-4", routine.WED.class4.class);
 
-showClass("thu-1", routine.THU.class1.class);
-showClass("thu-2", routine.THU.class2.class);
-showClass("thu-3", routine.THU.class3.class);
+// showClass("thu-1", routine.THU.class1.class);
+// showClass("thu-2", routine.THU.class2.class);
+// showClass("thu-3", routine.THU.class3.class);
 
-showClass("fri-1", routine.FRI.class1.class);
-showClass("fri-2", routine.FRI.class2.class);
+// showClass("fri-1", routine.FRI.class1.class);
+// showClass("fri-2", routine.FRI.class2.class);
 
 // target button
 const showDate = document.getElementById("date");
@@ -143,7 +143,8 @@ const countTime = setInterval(() => {
     .slice(12, 20);
 
   //which class is ongoin now
-  checkDayAndTime(currentDay);
+
+  // checkDayAndTime(currentDay);
 }, 1000);
 
 // ========== DARK / LIGHT ==========
