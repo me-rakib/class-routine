@@ -181,6 +181,10 @@ a {
     overflow: auto;
 }
 
+.home__routine-table::-webkit-scrollbar {
+    display: none;
+}
+
 table {
     width: 100% !important;
     height: 100%;
@@ -199,6 +203,8 @@ table {
     transform: translate(-50%, -50%);
     width: 100%;
     height: 100%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .table__text {

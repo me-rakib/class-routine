@@ -1,80 +1,88 @@
 const routine = {
     MON: {
         class1: {
-            time: "9:45-10.15",
-            class: "CS200"
+            time: "8:55-9.50",
+            class: "CS251"
         },
         class2: {
-            time: "10:30-11.00",
-            class: "CS202"
+            time: "10:05-11.00",
+            class: "CS253"
         },
         class3: {
-            time: "14:00-14.30",
-            class: "MA204"
+            time: "11:05-12.00",
+            class: "CS252"
         },
         class4: {
-            time: "14:45-16.45",
-            class: "CS203"
+            time: "14:00-16.55",
+            class: "CS255"
         }
     },
     TUE: {
         class1: {
-            time: "9:00-9.30",
-            class: "MA204"
+            time: "8:55-9.50",
+            class: "CS250"
         },
         class2: {
-            time: "10:30-11.00",
-            class: "CS200"
+            time: "10:05-11.00",
+            class: "CS251"
         },
         class3: {
-            time: "14:00-14.30",
-            class: "MA204"
+            time: "11:05-12.00",
+            class: "CS253"
         },
         class4: {
-            time: "14:45-16.45",
-            class: "CS204"
+            time: "14:00-16.55",
+            class: "CS254"
         }
     },
     WED: {
         class1: {
-            time: "8:30-9.30",
-            class: "CS202"
+            time: "8:55-9.50",
+            class: "CS252"
         },
         class2: {
-            time: "9:45-10.15",
-            class: "MA204"
+            time: "10:05-11.00",
+            class: "CS250"
         },
         class3: {
-            time: "13:15-13.45",
-            class: "CS200"
+            time: "11:05-12.00",
+            class: "CS251"
         },
         class4: {
-            time: "14:00-14:30",
-            class: "MA204"
+            time: "14:00-16:55",
+            class: "CS254 & CS255"
         }
     },
     THU: {
         class1: {
-            time: "9:45-10.15",
-            class: "CS202"
+            time: "8:55-9.50",
+            class: "CS253"
         },
         class2: {
-            time: "10:30-11.00",
-            class: "MA204"
+            time: "10:05-11.00",
+            class: "CS252"
         },
         class3: {
-            time: "15:00-16.30",
-            class: "*CS201"
+            time: "11:05-12.00",
+            class: "CS250"
+        },
+        class4: {
+            time: "13:00-13.55",
+            class: "CS251"
         }
     },
     FRI: {
         class1: {
-            time: "8:30-9.30",
-            class: "CS202"
+            time: "8:55-9.50",
+            class: "CS253"
         },
         class2: {
-            time: "9:45-10.15",
-            class: "CS200"
+            time: "10:05-11.00",
+            class: "CS250"
+        },
+        class3: {
+            time: "11:05-12.00",
+            class: "CS252"
         }
     }
 }
